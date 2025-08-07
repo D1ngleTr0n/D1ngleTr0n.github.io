@@ -8,24 +8,116 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
+    <canvas id="matrix-canvas"></canvas>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#note">Note</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="hacker-mode-btn">Hacker Mode</button></li>
         </ul>
     </nav>
-    <header>
+    <header id="home">
         <div id="particles-js"></div>
         <h1>Welcome to my Portfolio</h1>
         <p>The most bloated, extra-extra website you've ever seen.</p>
     </header>
+    <section id="about">
+        <div class="about-section">
+            <img src="https://picsum.photos/300/300" alt="Profile Picture">
+            <div class="bio">
+                <h2>D1ngleTr0n</h2>
+                <p>I am a web developer who loves to create bloated and extra extra websites. I have a passion for creating fun and interactive web experiences. I am always looking for new ways to push the boundaries of what is possible on the web.</p>
+            </div>
+        </div>
+        <div class="skills-section">
+            <h2>Skills</h2>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 0;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projects-section">
+            <div class="project">
+                <img src="https://picsum.photos/400/300?random=1" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>A bloated and extra extra website.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/400/300?random=2" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>A bloated and extra extra website.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/400/300?random=3" alt="Project 3">
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <p>A bloated and extra extra website.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/400/300?random=4" alt="Project 4">
+                <div class="project-info">
+                    <h3>Project 4</h3>
+                    <p>A bloated and extra extra website.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/400/300?random=5" alt="Project 5">
+                <div class="project-info">
+                    <h3>Project 5</h3>
+                    <p>A bloated and extra extra website.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/400/300?random=6" alt="Project 6">
+                <div class="project-info">
+                    <h3>Project 6</h3>
+                    <p>A bloated and extra extra website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="note">
+        <h2>Leave a Note</h2>
+        <div class="note-section">
+            <textarea id="note-input" placeholder="Leave a note..."></textarea>
+            <button id="add-note-btn">Add Note</button>
+            <div id="notes-container"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-section">
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
